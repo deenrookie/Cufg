@@ -1,11 +1,28 @@
 # Cufg
 Collect urls from github.
 
-从github采集相关域名的url，page默认为10，即默认采集包含相关domain最新的100个项目。
+从github采集相关域名的url，page默认为10，即默认采集包含相关domain最新的100个项目。正则表达式提取http、https链接。
+
+
 
 ## 示例
 
 ```
+
+Collect urls from github
+Usage: main [-d domain] [-p page]
+
+Options:
+  -d string
+        domain to search
+  -h    this help
+  -p int
+        page number (default 10)
+  -t string
+        github token
+        
+----        
+
 ./main -t <your github token> -d "kuaishou.com"
 
 [+] Start search ......
